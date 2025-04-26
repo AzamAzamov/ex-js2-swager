@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <dialog class="editModal" style="border: 0;" >
+        <button class="add" style="background-color: transparent; border: 0;">❌</button>
+        <form action="" class="editForm" >
+            <input type="text" name="editName">
+            <button type="submit">Save</button>
+            <button class="close">Cloes</button>
+        </form>
+    </dialog>
+
+
+
+    <dialog class="getInfo">
+        <button class="closeInfo">❌</button>
+        <div>
+            <p>Id <span class="Id"></span></p>
+            <p>Title <span class="Name"></span></p>
+        </div>
+    </dialog>
+
+
+    <div class="box">
+        <header>
+            <h1>ToDo List</h1>
+            <input type="text" class="search" placeholder="Search....">
+            
+        </header>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Info</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+        </table>
+        <footer>
+            <form action="" class="addForm">
+                <input type="text" name="addName" placeholder="Add a new task">
+                <button type="submit">Add</button>
+            </form>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    
+</body>
+</html>
+
